@@ -1,2 +1,2 @@
 # user-validation
-User Login Validation; JavaScript
+User Login Validation using JavaScript
