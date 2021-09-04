@@ -11,13 +11,14 @@ password.addEventListener('textInput', pass_Verify);
 
 //Validtion Code For Inputs
 function validated(){
+// 	|Creating fake email validation
 	if (email.value.length < 9) {
 		email.style.border = "1px solid red";
 		email_error.style.display = "block";
 		email.focus();
 		return false;
 	}
-	if (password.value.length < 6) {
+	if (password.value.length < 12) {
 		password.style.border = "1px solid red";
 		pass_error.style.display = "block";
 		password.focus();
@@ -33,7 +34,7 @@ function email_Verify(){
 	}
 }
 function pass_Verify(){
-	if (password.value.length >= 5) {
+	if (password.value.length >= 12) {
 		password.style.border = "1px solid silver";
 		pass_error.style.display = "none";
 		return true;
