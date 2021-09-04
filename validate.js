@@ -1,14 +1,15 @@
-	//Validtion Code For Inputs
-
+// Declaring form daat variables
 var email = document.forms['form']['email'];
 var password = document.forms['form']['password'];
 
 var email_error = document.getElementById('email_error');
 var pass_error = document.getElementById('pass_error');
 
+// call validartion on textInput
 email.addEventListener('textInput', email_Verify);
 password.addEventListener('textInput', pass_Verify);
 
+//Validtion Code For Inputs
 function validated(){
 	if (email.value.length < 9) {
 		email.style.border = "1px solid red";
