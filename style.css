@@ -1,6 +1,7 @@
 *{
 	padding: 0;
 	margin: 0;
+	font-size: 14px;
 }
 body{
 	background: turquoise;
@@ -61,6 +62,8 @@ body{
 .login_form button:hover{
 	background: #2cb6a8;
 }
+
+/* ERROR FIELDS */
 .login_form #email_error,
 .login_form #pass_error{
 	margin-top: 5px;
